@@ -1,0 +1,221 @@
+a          {text-decoration: none}
+a:link    {color: goldenrod}
+a:visited  {color: goldenrod} 
+a:active   {color: black} 
+a:hover    {color: darkkhaki; text-decoration: underline;}
+
+h1 {
+  color: #8B4513; 
+  text-align: center; 
+  font-family: Book Antiqua, serif; 
+  font-weight: bold; 
+  font-style: italic;
+ text-shadow: 4px 4px 7px #A52A2A; 
+ 
+}
+
+h2, h3 {
+  color: black;  
+  text-align: center;
+  font-family: Book Antiqua, serif; 
+  font-weight: bold; 
+  font-style: italic;
+  text-shadow: 3px 3px 7px #800000;
+}
+
+p {
+  color: #512800; 
+  text-align: center; 
+  font-family:  Book Antiqua, serif; 
+  font-weight: bold; 
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+p:first-letter {
+  font-size: 1.6em; 
+  
+    }
+
+hr  {  
+    width: 80%; 
+    background-color: #A0522D; 
+    }
+
+body {
+    /*background-image: radial-gradient(rgb(250,250,210)73%, rgba(139,69,19,0.5));*/
+    background-image: radial-gradient(circle, rgb(250,250,210)60%, rgba(139,69,19,0.5));
+    margin: 0px;
+   }
+   header {
+      margin-top: auto;
+   }
+
+   .bg-hlava {
+     background: url("images/hlava2.gif")center;
+     box-shadow:  4px 4px 8px #C0C0C0;
+     max-width: 100%;
+     height: auto;
+     background-size: auto;
+     background-repeat: no-repeat;
+     position: relative;
+     padding: 100px;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     
+     }
+   
+    .topnav  {
+     overflow: auto;
+    background-image: radial-gradient(circle, rgba(255,215,0,0.2)60%, rgba(139,69,19,0.1));
+     list-style-type: none;
+     width: 100%;
+    height: 100%;
+    margin-top: 10px;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 2px;
+    position: relative;
+    box-shadow: 4px 4px 7px #DEB887;
+      }
+      
+    ul.topnav li {float: left;}
+      
+    ul.topnav li a {
+     display: block;
+     color: #FF8C00;
+     padding-right: 14px;
+     text-decoration: none;
+     font-weight: bold;
+     font-family:  Book Antiqua, serif; 
+     font-style: italic;
+     font-size: 1.3em;
+     text-shadow: 5px 3px 8px #DAA520;
+     }
+    
+   ul.topnav li a:hover:not(.active) {
+     background-color: rgba(255,140,0,0.2);
+     color: #800000;
+     text-shadow: 2px 2px 5px #A52A2A;
+}
+   ul.topnav li a.active {
+    color: #228B22;
+    text-shadow: 2px 2px 4px #3CB371;
+}
+ 
+.ikona {
+    max-height: 30px;
+}
+
+img {
+    box-shadow: 4px 4px 10px #BDB76B;
+}
+
+.obsah {
+    position:relative;
+    background-color: #BDE1EC;
+    max-width: 100%;
+    height: 800px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border:10px solid rgba(255,222,173,0.8);
+    border-style: ridge; 
+    border-radius: 10px;
+    display: block;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical; 
+    force-overflow: {min-height: 450px};
+    -webkit-scrollbar: {width: 20px};
+    -webkit-scrollbar-track: {background: #FF8C00};
+    -webkit-scrollbar-thumb: {background: #888};
+    box-shadow: 4px 4px 8px #8B4513;
+}
+
+.clanek {
+    width:90%;
+    margin:auto;
+}
+
+.galerie {
+   position:relative;
+   background-color: #B7B8E6; 
+   background: url("images/zed.jpg") no-repeat;
+   background-size: auto;
+   max-width: 100%;
+   height: 900px;
+   margin-top: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 30px;
+   border:  6px  Tan; 
+   border-style: ridge; 
+   border-radius: 13px; 
+   overflow-y: auto; 
+   overflow: -moz-scrollbars-vertical;
+   -webkit-scrollbar: {width: 25px; background-color: #FFA500};
+   force-overflow: {min-height: 450px};
+   box-shadow: 4px 4px 8px #8B4513;
+}
+
+.vstup {
+   position: relative; 
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   text-align: center;
+   padding: 50px;
+   
+    }
+    
+ .footer {
+  position: relative;  
+  padding: 10px;
+  text-align: center;
+  background-image: radial-gradient(circle, rgba(255,215,0,0.2)60%, rgba(139,69,19,0.1));
+  margin-top: 150px;
+  display: block;
+  color: #512800; 
+  text-align: center; 
+  font-family:  Book Antiqua, serif; 
+  font-weight: bold; 
+  font-style: italic;
+  font-size: 1.1em;
+  text-shadow: 3px 3px 7px #512800;
+}
+
+
+
+   
+   @media screen and (max-width: 500px) {
+   body   .bg-hlava .vstup .obsah .galerie{
+           width: 100%;
+           padding: 0px;
+       }
+   }
+   
+  @media screen and (max-width: 500px) {
+  .topnav {
+    width: 100%;
+    height: 75%;
+    padding: 0px;
+    margin: 0px;
+  }
+ ul.topnav li a {
+    float: left;
+    padding: 0px;
+    height: 50%;
+    text-align: center;
+  }
+   
+   }
+   
+   
+@media screen and (max-width: 500px) {
+.topnav li  {
+   text-align: center;
+  /* float: none;*/
+  }
+}
